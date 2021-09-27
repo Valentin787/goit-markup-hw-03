@@ -1,2 +1,2 @@
-# goit-markup-hw-03
-Третья дз
+# goit-markup-hw-02
+My secondary homework
