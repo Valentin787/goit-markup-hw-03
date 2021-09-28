@@ -6,12 +6,9 @@
     --tomato-color: #DD5F18;
     --address-text:color: rgba(255, 255, 255, 0.6);
     --background-button: #188CE8;
-
-
 }
 html{
     box-sizing: border-box ;
-
 }
 *,
 *::before,
@@ -29,13 +26,10 @@ body{
     margin-bottom: 0px;
 }
 .container{
-    outline: 2px solid tomato;
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-  
-
 }
 h3{
     display: inline;
@@ -58,13 +52,10 @@ h3{
         .full-head{
         display: flex;
         justify-content: space-between;
-
         }
-
     .nav-head{
         display:flex ;
-        align-items: center;
-       
+        align-items: center;  
     }
     .header-list{
         list-style: none;
@@ -72,15 +63,11 @@ h3{
         margin-top: 0px;
         padding-left: 0px;
         padding-right: 0px;       
-        display: flex;
-       
+        display: flex;       
     }
-        
-
     .header-list .item + .item{
         margin-left: 50px;
-    }
-    
+    }  
     .logo{
         padding-bottom: 25px;
         padding-top: 24px;        
@@ -124,7 +111,6 @@ h3{
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
-
     }
     .home-links.current{
         color: var(--accent-text);
@@ -135,7 +121,6 @@ h3{
     .home-links:focus{
         color: var(--accent-text);  
     }
-
 
     .header-links{
         color: var(--head-text);
@@ -164,9 +149,7 @@ h3{
         margin-bottom: 0px;
         margin-top: 0px;       
         justify-content: flex-end;
-        align-items:center;
-
-        
+        align-items:center;       
     }
     .list-contacts .item + .item{
         margin-left: 50px;
@@ -177,15 +160,13 @@ h3{
         padding-top: 32px;
         padding-bottom: 32px;
         padding-right: 15px;
-      
 
         color: var(--primary-text);
         text-decoration: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        letter-spacing: 0.02em;
-        
+        letter-spacing: 0.02em;   
     }
     .header-contacts:hover{
         color: var(--accent-text);
@@ -206,7 +187,6 @@ h3{
         margin-top: 94px;
         margin-bottom: 0px;
         
-     
     }
     .button-list .item + .item{
         margin-left: 8px;
@@ -224,14 +204,10 @@ h3{
         border: none;
         border-radius: 4px;
         margin-bottom: 16px;
-
-      
-
     }
     .main-button:hover{
         background-color: #2196F3;
-        color: var(--footer-text);
-    
+        color: var(--footer-text);   
     }
     .main-button:focus{
         background-color: #2196F3;
@@ -249,7 +225,6 @@ h3{
 
     }
     .card{
-        outline: 2px solid tomato;
         margin-bottom: 30px;
         margin-right: 30px;
 
@@ -257,34 +232,17 @@ h3{
         border: 1px solid #EEEEEE;  
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         
-
         width: 370px;
-        /* Можно указывать ширину в %(это поможет при увеличении ширины контейнера)
-        width: 33.3333%;
-        или 
-        width: calc((100%-60px(маржины))/N(нужное кол.елементов ))
-        браузер в таком случае автоматически задает ширину контейнерам)
-        Но при этом убираем правые маржины в каждых третих
-        */
     }
     .card:nth-child(3n){
         margin-right: 0px;
     }
     .card:nth-last-child(-n+3){
         margin-bottom: 0px;
-    }
-    /* Альтернатива(нужно задать в .card нулевые margin
-    .card:not(:nth-child(3n)){
-        margin-right: 30px;
-    }
-    .card:not(:nth-last-child(-n+3)){
-        margin-bottom: 30px;
-    }*/
-    
+    } 
     .text-card{        
         padding: 20px 24px;
         background-color: #FFFFFF;
-
     }
     .card-head{
         margin-top: 0px;
@@ -294,8 +252,7 @@ h3{
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
-        letter-spacing: 0.06em;
-     
+        letter-spacing: 0.06em;    
     }
     .primary-text{
         font-size: 16px;
@@ -307,12 +264,10 @@ h3{
     
 /*Footer-section*/
 
-
     .footer-section{
         background-color: #2F303A;
         margin-top: 0px;
         margin-bottom: 0px;
-
     }   
     .footer-nav{
     padding-top: 60px;
@@ -424,10 +379,7 @@ h3{
 
     .characteristics-section{
         margin-top: 94px;
-        margin-bottom: 0px;
-
-
-       
+        margin-bottom: 0px;    
     }
     .characteristics-list{
         list-style: none;
@@ -458,7 +410,6 @@ h3{
     .catalog-head{  
         margin-top: 94px;
         margin-bottom: 50px;
-        outline: 2px solid tomato;
         color: var(--head-text);
         font-weight: 700;
         font-size: 36px;
@@ -476,7 +427,6 @@ h3{
 
         list-style: none;
         margin-bottom: 0px;
-        outline: 2px solid tomato;
     }
     .catalog-list .item + .item{
         margin-left: 30px;
@@ -521,7 +471,6 @@ h3{
         margin: 30px 59px 30px 59px;
         display: block;
         text-align: center;
-
     }
 
     .third-head{
