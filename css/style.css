@@ -2,10 +2,13 @@
     --head-text:#212121;
     --accent-text:#2196F3;
     --primary-text:#757575;
-    --footer-text: #FFFFFF;
+    --primary-color: #FFFFFF;
     --tomato-color: #DD5F18;
     --address-text:color: rgba(255, 255, 255, 0.6);
     --background-button: #188CE8;
+    --button-color: #F5F4FA;
+    --border-color: #EEEEEE;
+    --footer-background:#2F303A;
 }
 html{
     box-sizing: border-box ;
@@ -21,9 +24,13 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text);
 }
-.list-none{
+ul{
     list-style: none;
-    margin-bottom: 0px;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
 }
 .container{
     max-width: 1200px;
@@ -31,6 +38,17 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
+.hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
 h3{
     display: inline;
     color: var(--head-text);
@@ -42,12 +60,8 @@ h3{
 /*Header-section*/
 
     .header-section{
-        background-color: #FFFFFF;
-
-        margin-bottom: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        border-color: #ECECEC;
+        background-color:var(--primary-color);       
+        border-bottom: 1px solid var(--primary-color);
         }
         .full-head{
         display: flex;
@@ -58,7 +72,6 @@ h3{
         align-items: center;  
     }
     .header-list{
-        list-style: none;
         margin-bottom: 0px;
         margin-top: 0px;
         padding-left: 0px;
@@ -74,7 +87,6 @@ h3{
         margin-right: 93px;
 
         color: var(--head-text);
-        text-decoration: none;
         font-family: Raleway;
         font-weight: 700;
         font-size: 26px;
@@ -82,18 +94,14 @@ h3{
         letter-spacing: 0.03em;
 
     }
-    .logo:hover{
-        color: var(--accent-text)
-    }
+
     .logo:focus{
         color: var(--accent-text);
     }
     .logo-web{
         color: var(--accent-text);
     }
-    .logo-web:hover{
-        color: var(--accent-text);
-    }
+
     .logo-web:focus{
         color: var(--accent-text);
     }
@@ -102,12 +110,10 @@ h3{
 
     .home-links{
         color: var(--head-text);
-        text-decoration: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        margin-left: 0px;
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -124,7 +130,6 @@ h3{
 
     .header-links{
         color: var(--head-text);
-        text-decoration: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -144,11 +149,7 @@ h3{
 
 
     .list-contacts{
-        display: flex;
-        list-style: none;
-        margin-bottom: 0px;
-        margin-top: 0px;       
-        justify-content: flex-end;
+        display: flex;    
         align-items:center;       
     }
     .list-contacts .item + .item{
@@ -159,10 +160,8 @@ h3{
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
-        padding-right: 15px;
 
         color: var(--primary-text);
-        text-decoration: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -176,16 +175,15 @@ h3{
     }
 
 /*Main section*/
+    .button-link{
+        padding: 94px 0;
+    }
   
     .button-list{
-        list-style: none;
         display: flex;
         justify-content: center;
+        margin-bottom: 50px;
 
-        margin-left: 215px;
-        margin-right: 215px;
-        margin-top: 94px;
-        margin-bottom: 0px;
         
     }
     .button-list .item + .item{
@@ -193,43 +191,44 @@ h3{
     }  
 
     .main-button{
-        background-color: #F5F4FA; 
+        background-color: var(--button-color); 
         color: var(--head-text);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
-        text-align: center;
         letter-spacing: 0.03em;
         cursor: pointer;
         border: none;
         border-radius: 4px;
-        margin-bottom: 16px;
+        padding: 6px 22px;
+    }   
+    .main-button.current{
+    color: var(--primary-color);
+    background-color: var(--background-button);
+        
     }
     .main-button:hover{
-        background-color: #2196F3;
+        background-color: var(--accent-text);
         color: var(--footer-text);   
     }
     .main-button:focus{
-        background-color: #2196F3;
+        background-color: var(--accent-text);
         color: var(--footer-text); 
     }
+
     .section-list{
-        background-color: #FFFFFF;
-        list-style: none;
+        background-color: var(--primary-color);
         display: flex;
         flex-wrap: wrap;
-        
-
-        margin-top: 88px;
-        margin-bottom: 30px;
+    
 
     }
     .card{
         margin-bottom: 30px;
         margin-right: 30px;
 
-        background: #FFFFFF;
-        border: 1px solid #EEEEEE;  
+        background:var(--primary-color);
+        border: 1px solid var(--border-color);  
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         
         width: 370px;
@@ -242,7 +241,7 @@ h3{
     } 
     .text-card{        
         padding: 20px 24px;
-        background-color: #FFFFFF;
+        background-color: var(--primary-color);
     }
     .card-head{
         margin-top: 0px;
@@ -265,17 +264,14 @@ h3{
 /*Footer-section*/
 
     .footer-section{
-        background-color: #2F303A;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        background-color: var(--footer-background);
+
     }   
     .footer-nav{
-    padding-top: 60px;
-    padding-bottom: 60px;
+        padding: 60px 0;
     }
     .logo-footer{
-        color: var(--footer-text);
-        text-decoration: none;
+        color: var(--primary-color);
         font-family: Raleway;
         font-weight: 700;
         font-size: 26px;
@@ -290,12 +286,11 @@ h3{
         color: var(--accent-text);
     }
     .footer-data{
-        margin-top: 50px;
+        margin-top: 20px;
       
     }
     .footer-address{
-        color: var(--footer-text);
-        text-decoration: none;
+        color: var(--primary-color);
         font-style: normal;
         font-size: 14px;
         line-height: 1.71;
@@ -309,13 +304,13 @@ h3{
     }
     .footer-contacts{
         color: rgba(255, 255, 255, 0.6);
-        text-decoration: none;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         margin-top: 9px;
+        display: block;
     }
     .footer-contacts:hover{
         color: var(--accent-text);
@@ -326,31 +321,28 @@ h3{
 
 /*Studio html*/
     .services-section{
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #2F303A;
+        padding: 200px;
+        background-color: var(--footer-background);
         color: var(--footer-text);
         text-align: center;
-        width: 1600px;
-        height: 600px;
+
     }
     .services-head{
-        margin-top: 200px;
-        margin-bottom: 0px;
+        margin: 0 auto;
+
         width: 696px;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        display: inline-block;
+        color: var(--primary-color);
     }
     .services-button{
         display:inline-block;
         min-width: 200px;
         background-color: var(--background-button);
-        color: var(--footer-text);
-        font-family: Roboto;
+        color: var(--button-color);
         font-weight: 700;
         font-size: 16px;
         line-height: 1.86;
@@ -358,12 +350,12 @@ h3{
         border-radius: 4px;
         padding: 10px 32px;
         margin-top: 30px;
-        margin-bottom: 200px;
-        margin-left: 697px;    
-        margin-right: 697px; 
+
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-color: var(--accent-text);
+
+        border:none;
+        cursor: pointer;
     }
  
 /*Characteristics section*/
@@ -379,10 +371,9 @@ h3{
 
     .characteristics-section{
         margin-top: 94px;
-        margin-bottom: 0px;    
+        margin-bottom: 94px;    
     }
     .characteristics-list{
-        list-style: none;
         margin-bottom: 0px;
         display: flex;
         align-items: center;
@@ -408,7 +399,7 @@ h3{
 /* Catalog section*/ 
  
     .catalog-head{  
-        margin-top: 94px;
+
         margin-bottom: 50px;
         color: var(--head-text);
         font-weight: 700;
@@ -425,7 +416,6 @@ h3{
         padding-left: 0px;
         padding-right: 0px;
 
-        list-style: none;
         margin-bottom: 0px;
     }
     .catalog-list .item + .item{
@@ -434,7 +424,7 @@ h3{
 /*Team section*/
 
     .team-section{
-        background-color: #F5F4FA;
+        background-color: var(--button-color);
         margin-top: 94px;
         margin-bottom: 0px;
         
@@ -451,7 +441,6 @@ h3{
         letter-spacing: 0.03em;
     }
     .team-list{
-        list-style: none;
         display: flex;
         padding-left: 0px;
         margin-bottom: 0px;
@@ -461,7 +450,7 @@ h3{
         margin-left: 30px;
     }
     .team{
-        background-color: white;
+        background-color:var(--primary-color);
 
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;

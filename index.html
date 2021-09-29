@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Студия</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -26,14 +25,12 @@
                 </ul>
             </nav> 
                 <ul class="list-contacts">
-                    <li class="item"><a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com"</a>
+                    <li class="item"><a class="header-contacts" href="mailto:info@devstudio.com"> info@devstudio.com </a>
                     </li>
                     <li class="item"><a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
         </div>
-        
-        
-    
+           
     </header>
 
 <!--Main section-->
@@ -47,8 +44,9 @@
         </section>
 
     <!--Characteristics section-->
-        <section class="characteristics-section container">
-            <!--<h2>Преимущества</h2>-->
+        <section class="characteristics-section">
+            <div class="container">
+            <h2 class="hidden">Преимущества</h2>
                 <ul class="characteristics-list">
                     <li class="item">
                         <h3 class="characteristics-head">Внимание к деталям</h3>
@@ -67,21 +65,24 @@
                         <p class="characteristics-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
+            </div>
         </section>
     <!--Catalog section-->
-        <section class="catalog-section container">
-            <h2 class="catalog-head">Чем мы занимаемся</h2>
-            <ul class="catalog-list">
-                <li class="item">
-                    <img src="./images/box1.jpg" alt="Програмирование" width="370">
-                </li>
-                <li class="item">
-                    <img src="./images/box2.jpg" alt="Настройка приложения" width="370">
-                </li>
-                <li class="item">
-                  <img src="./images/box3.jpg" alt="Выбор ццвета" width="370">  
-                </li>
-            </ul>
+        <section class="catalog-section">
+            <div class="container">
+                <h2 class="catalog-head">Чем мы занимаемся</h2>
+                <ul class="catalog-list">
+                    <li class="item">
+                        <img src="./images/box1.jpg" alt="Програмирование" width="370">
+                    </li>
+                    <li class="item">
+                        <img src="./images/box2.jpg" alt="Настройка приложения" width="370">
+                    </li>
+                    <li class="item">
+                    <img src="./images/box3.jpg" alt="Выбор ццвета" width="370">  
+                    </li>
+                </ul>
+            </div>
         </section>
         
     <!--Team section-->      
@@ -123,19 +124,14 @@
     </main>
 <!--Footer section-->
     <footer class="footer-section">
-        <nav class="footer-nav container">
+        <div class="footer-nav container">
         <a class="logo-footer" href="index.html"><span class="logo-web">Web</span>Studio</a>
             <address class="footer-data"> 
                 <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
-                <span class="contacts-data">
-                    <a class="footer-contacts" href="mailto:info@example.com">info@example.com</a><br>
-                </span>
-
-                <span class="contacts-data">
+                    <a class="footer-contacts" href="mailto:info@example.com">info@example.com</a>
                     <a class="footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
-                </span>
             </address>
-        </nav>
+        </div>
     </footer>
 
 </body>
