@@ -57,6 +57,7 @@ h3{
     line-height: 2;
     letter-spacing: 0.06em;
 }
+
 /*Header-section*/
 
     .header-section{
@@ -321,7 +322,7 @@ h3{
 
 /*Studio html*/
     .services-section{
-        padding: 200px;
+        padding: 200px 0px;
         background-color: var(--footer-background);
         color: var(--footer-text);
         text-align: center;
@@ -362,17 +363,18 @@ h3{
     .container .characteristics-section{
         display: flex;
         align-items: center;
+       
 
     }
-
+    .characteristics-section{
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
     .characteristics-list .item + .item{
         margin-left: 30px;
     }
 
-    .characteristics-section{
-        margin-top: 94px;
-        margin-bottom: 94px;    
-    }
+
     .characteristics-list{
         margin-bottom: 0px;
         display: flex;
@@ -397,10 +399,14 @@ h3{
     }
 
 /* Catalog section*/ 
- 
+    .catalog-section{
+      
+        padding-bottom: 94px;
+    }
     .catalog-head{  
-
-        margin-bottom: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 50px;
         color: var(--head-text);
         font-weight: 700;
         font-size: 36px;
@@ -425,14 +431,15 @@ h3{
 
     .team-section{
         background-color: var(--button-color);
-        margin-top: 94px;
-        margin-bottom: 0px;
+        padding-bottom: 94px;
+        padding-top: 94px;
         
     }
     .team-head{
     
-      
-        padding-top: 94px;
+        margin-top: 0px; 
+        margin-bottom: 50px ;
+
         color: var(--head-text);
         font-weight: 700;
         font-size: 36px;
@@ -444,7 +451,6 @@ h3{
         display: flex;
         padding-left: 0px;
         margin-bottom: 0px;
-        padding-bottom: 94px;
     }
     .team-list .team + .team{
         margin-left: 30px;
