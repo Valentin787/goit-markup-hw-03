@@ -179,7 +179,10 @@ h3{
     .button-link{
         padding: 94px 0;
     }
-  
+    .link-section .container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .button-list{
         display: flex;
         justify-content: center;
